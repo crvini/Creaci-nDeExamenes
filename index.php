@@ -13,6 +13,9 @@
         <script src="js/creacion.js"></script>
 </head>
 <body>
+<br />  
+<center>
+    
     <div class="container-fluid">
         <div class="dropdown">
         <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#miModal" id="carro">
@@ -20,6 +23,7 @@
           </button>
         </div>
     </div>
+</center>
 
     <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">

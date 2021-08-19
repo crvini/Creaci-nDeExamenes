@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -15,15 +16,19 @@
    <form class="form-horizontal">
     <!--Form Preguntas-->
     <div id="pregunta">
-       
-       <div> 
+    </div> 
     <!--Form Preguntas-->
     <!--From respuestas-->
 
 
     <!-- From respuestas -->
 </form>
-
+<div class=" container m-5">
+  
+    <div class="row">
+    <input type="button" class="btn btn-primary" value="Generar link del Examen" onclick="enviarExamen();">
+    </div>
+</div>
 
   <!-- The Modal -->
 <div class="modal" id="myModal">
@@ -32,7 +37,7 @@
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
+        <h4 class="modal-title">Crear mis respuestas</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
@@ -92,12 +97,15 @@
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
       </div>
 
     </div>
   </div>
 </div>
+</div>
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
  integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>

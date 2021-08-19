@@ -19,7 +19,7 @@ window.onload = function(){
       let datosExamen = response["examen"];
       datosExamen.forEach((element) => {
       let  nombreExamen = element["nombre"];
-      let  codigo = element["codigo"];
+      var  codigo = element["codigo"];
       let  cantPreguntas = element["cantPreguntas"];
 
         document.querySelector("#nombreExamen").innerHTML +="<h3>"+nombreExamen+"</h3>";
@@ -313,6 +313,29 @@ function crearrespuesta1(){
   
   $.ajax(settings).done(function (response) {
     console.log(response);
+  });
+
+}
+
+function enviarExamen(){
+
+
+  var settings = {
+    url: `http://localhost/examenAPI/examen.php?ver=examen&examen=${id}`,
+    method: "GET",
+    timeout: 0,
+  };
+
+  $.ajax(settings).done(function (response) {
+    let datosExamen = response["examen"];
+    datosExamen.forEach((element) => {
+
+    let  codigo = element["codigo"];
+
+      window.location.href = `http://localhost/Creaci%C3%B3nDeExamenes/solucionar/${codigo}`;
+
+
+    });
   });
 
 }
